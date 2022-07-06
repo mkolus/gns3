@@ -1,4 +1,5 @@
-FGT_VM64_KVM*/
-FGT_VM64_KVM*.zip
+FGT_VM64_KVM*/*
 *.out
 *.qcow2
+*.zip
+*.img
