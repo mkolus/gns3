@@ -6,13 +6,15 @@ La razón de armar esto es que demoran mucho en publicar la actualización cuand
 
 ## FortiGate
 
-- 6.2.9 (build 1234)
-- 6.4.8 (build 1914)
-- 7.0.3 (build 0234)
+- 6.4.9 (build 1966)
+- 7.0.6 (build 0366)
+- 7.2.0 (build 1157)
 
 Bajar las imágenes desde el [Portal de Soporte de Fortinet](https://support.fortinet.com). Usar las que tienen el nombre `FGT_VM64_KVM-vX.X.X-buildXXXX-FORTINET.out.kvm`.
 
 ## Mikrotik Cloud Hosted Router
 
-- 6.49.1
-- 7.1.rc7
+- 6.48.6
+- 6.49.6
+- 7.3.1
+- 7.4.rc1
