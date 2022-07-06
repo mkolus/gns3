@@ -1,11 +1,12 @@
-param ($file, $version, $download_url)
+param ($file, $version)
 
 Add-Type -assembly "system.io.compression.filesystem"
 
 $file = (Get-ChildItem $file).Name
+$fullpath = (Get-Location).Path + "\" + $file
 $realname = $file -replace "\.zip$", ""
 
-$zip = [io.compression.zipfile]::OpenRead($file)
+$zip = [io.compression.zipfile]::OpenRead($fullpath)
 $archived_file = $zip.Entries | Where-Object { $_.Name -eq $realname }
 $size = $archived_file.Length
 [System.IO.Compression.ZipFileExtensions]::ExtractToFile($archived_file, $realname, $true)
