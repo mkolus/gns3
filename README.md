@@ -6,6 +6,9 @@ La razón de armar esto es que demoran mucho en publicar la actualización cuand
 
 ## FortiGate
 
+- 6.0.14 (build 0457)
+- 6.2.11 (build 1303)
+- 6.4.10 (build 2000)
 - 6.4.9 (build 1966)
 - 7.0.6 (build 0366)
 - 7.2.0 (build 1157)
