@@ -9,7 +9,7 @@ $realname = $file -replace "\.zip$", ""
 $zip = [io.compression.zipfile]::OpenRead($fullpath)
 $archived_file = $zip.Entries | Where-Object { $_.Name -eq $realname }
 $size = $archived_file.Length
-[System.IO.Compression.ZipFileExtensions]::ExtractToFile($archived_file, $realname, $true)
+[System.IO.Compression.ZipFileExtensions]::ExtractToFile($archived_file, (Get-Location).Path + "\" + $realname, $true)
 $zip.Dispose()
 
 $hash = (Get-FileHash -Algorithm MD5 $realname).Hash.ToLower()
